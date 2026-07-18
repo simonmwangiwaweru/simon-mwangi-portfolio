@@ -173,7 +173,7 @@ Final-year BBIT student at JKUAT (Nairobi) and a full-stack developer & designer
 
 ## 10. Contact (links only for v1)
 
-- **Email:** simonmwangiwaweru@gmail.com
+- **Email:** simonmwangi51302@gmail.com
 - **GitHub:** https://github.com/simonmwangiwaweru
 - **LinkedIn:** https://www.linkedin.com/in/simon-mwangidev
 

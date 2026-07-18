@@ -4,7 +4,7 @@ export const site = {
   pitch:
     "Full-stack developer who ships real products — from USSD marketplaces to AI business tools — with a designer's eye.",
   location: "Nairobi, Kenya",
-  email: "simonmwangiwaweru@gmail.com",
+  email: "simonmwangi51302@gmail.com",
   github: "https://github.com/simonmwangiwaweru",
   linkedin: "https://www.linkedin.com/in/simon-mwangidev",
   cvPath: "/simon-mwangi-cv.pdf",
