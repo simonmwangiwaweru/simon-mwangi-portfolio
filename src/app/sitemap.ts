@@ -1,16 +1,15 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/content/projects";
-
-const siteUrl = "https://simonmwangi.dev";
+import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = ["", "/projects", "/blog"].map((path) => ({
-    url: `${siteUrl}${path}`,
+    url: `${site.url}${path}`,
     lastModified: new Date(),
   }));
 
   const projectRoutes = projects.map((project) => ({
-    url: `${siteUrl}/projects/${project.slug}`,
+    url: `${site.url}/projects/${project.slug}`,
     lastModified: new Date(),
   }));
 

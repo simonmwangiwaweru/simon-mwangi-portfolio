@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { projects } from "@/content/projects";
 import ProjectCard from "@/components/ProjectCard";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -18,11 +19,11 @@ export default function ProjectsPage() {
         Everything I&apos;ve shipped
       </h1>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2">
+      <Reveal className="mt-12 grid gap-6 sm:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}
-      </div>
+      </Reveal>
     </section>
   );
 }

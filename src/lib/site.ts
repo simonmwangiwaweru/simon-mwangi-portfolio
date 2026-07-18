@@ -1,6 +1,7 @@
 export const site = {
   name: "Simon Mwangi Waweru",
   shortName: "Simon Mwangi",
+  url: "https://simon-mwangi-portfolio.vercel.app",
   pitch:
     "Full-stack developer who ships real products — from USSD marketplaces to AI business tools — with a designer's eye.",
   location: "Nairobi, Kenya",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
@@ -101,6 +102,24 @@ export default async function ProjectPage({
               <GithubIcon size={16} />
               {repo.label}
             </a>
+          ))}
+        </div>
+      )}
+
+      {project.images.length > 0 && (
+        <div className="mt-10 flex flex-col gap-4">
+          {project.images.map((image) => (
+            <div
+              key={image}
+              className="relative aspect-video w-full overflow-hidden rounded-xl border border-border"
+            >
+              <Image
+                src={image}
+                alt={`${project.title} screenshot`}
+                fill
+                className="object-cover"
+              />
+            </div>
           ))}
         </div>
       )}

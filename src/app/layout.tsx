@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { site } from "@/lib/site";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -14,10 +15,8 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://simonmwangi.dev";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(site.url),
   title: {
     default: "Simon Mwangi Waweru — Full-Stack Developer & Designer",
     template: "%s — Simon Mwangi Waweru",
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
     title: "Simon Mwangi Waweru — Full-Stack Developer & Designer",
     description:
       "Full-stack developer who ships real products — from USSD marketplaces to AI business tools — with a designer's eye.",
-    url: siteUrl,
+    url: site.url,
     siteName: "Simon Mwangi Waweru",
     locale: "en_US",
     type: "website",

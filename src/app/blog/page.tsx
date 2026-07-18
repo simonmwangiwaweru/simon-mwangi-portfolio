@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { getAllPosts } from "@/lib/posts";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -21,7 +22,10 @@ export default async function BlogPage() {
         Notes from the build
       </h1>
 
-      <ul className="mt-12 flex flex-col divide-y divide-border border-t border-border">
+      <Reveal
+        as="ul"
+        className="mt-12 flex flex-col divide-y divide-border border-t border-border"
+      >
         {posts.map((post) => (
           <li key={post.slug}>
             <Link
@@ -49,7 +53,7 @@ export default async function BlogPage() {
             </Link>
           </li>
         ))}
-      </ul>
+      </Reveal>
     </section>
   );
 }
