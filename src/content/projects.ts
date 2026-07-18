@@ -88,8 +88,8 @@ export const projects: Project[] = [
     slug: "this-is-margs",
     title: "This Is Margs",
     tagline:
-      "A Next.js ecommerce storefront with M-Pesa checkout, Supabase, and an admin dashboard.",
-    role: "Full-stack developer (personal project)",
+      "A wellness brand's website and ecommerce storefront, built freelance from the ground up.",
+    role: "Freelance full-stack developer",
     stack: [
       "Next.js",
       "TypeScript",
@@ -98,11 +98,11 @@ export const projects: Project[] = [
       "Tailwind CSS",
     ],
     problem:
-      "Wanted to prove a complete ecommerce store — catalog, cart, checkout, payments, and admin — could be built and owned end-to-end rather than assembled from Shopify or WooCommerce.",
+      "A wellness brand client needed a website that matched their identity and could actually sell — not just a brochure site, but a real storefront with checkout and order management.",
     built:
-      "A full storefront: product shop and detail pages, a cart drawer, a checkout flow wired to M-Pesa Daraja for payment, Supabase for product/order data, and an admin area for managing the catalog. Rounded out with a newsletter signup and a WhatsApp contact button for customer support.",
+      "A full site and storefront for the client: product shop and detail pages, a cart drawer, a checkout flow wired to M-Pesa Daraja for payment, Supabase for product/order data, and an admin area for managing the catalog. Rounded out with a newsletter signup and a WhatsApp contact button for customer support.",
     outcome:
-      "A live, deployed store that proves direct M-Pesa payment integration outside of an academic context, and adds Supabase/Postgres to the stack alongside the MySQL work elsewhere.",
+      "A live, deployed client store that proves direct M-Pesa payment integration outside of an academic context, and adds Supabase/Postgres to the stack alongside the MySQL work elsewhere.",
     links: {
       live: "https://this-is-margs.vercel.app",
       github: "https://github.com/simonmwangiwaweru/this-is-margs",

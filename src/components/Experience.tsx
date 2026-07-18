@@ -1,4 +1,5 @@
 import { experience } from "@/content/experience";
+import { certifications } from "@/content/certifications";
 import Reveal from "@/components/Reveal";
 
 export default function Experience() {
@@ -33,6 +34,26 @@ export default function Experience() {
               </li>
             ))}
           </ol>
+
+          <h3 className="mt-14 font-display text-sm font-semibold uppercase tracking-widest text-muted">
+            Certifications
+          </h3>
+          <ul className="mt-4 flex flex-col divide-y divide-border border-t border-border">
+            {certifications.map((cert) => (
+              <li
+                key={cert.title}
+                className="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:justify-between"
+              >
+                <div>
+                  <p className="text-base font-semibold">{cert.title}</p>
+                  <p className="text-sm text-muted">{cert.org}</p>
+                </div>
+                <p className="text-sm font-medium text-ink/70">
+                  {cert.period}
+                </p>
+              </li>
+            ))}
+          </ul>
         </Reveal>
       </div>
     </section>
