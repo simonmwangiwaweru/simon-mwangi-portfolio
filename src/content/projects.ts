@@ -24,19 +24,21 @@ export const projects: Project[] = [
       "Connecting Kenya's informal workers to jobs — even without a smartphone.",
     role: "Full-stack developer (final-year university project)",
     stack: [
-      "Next.js",
       "Node.js",
-      "MySQL",
+      "Express",
+      "MongoDB",
       "Africa's Talking (USSD)",
       "M-Pesa Daraja (escrow)",
+      "Google OAuth",
     ],
     problem:
       "Many informal workers — fundis, cleaners, casual laborers — lack smartphones or reliable data, so app-only job platforms exclude the people who need them most.",
     built:
-      "A marketplace where workers register and receive job offers via USSD on any phone, while clients post jobs through a web app. M-Pesa escrow holds payment until work is confirmed complete, protecting both sides of the transaction. Documented in a full 76-page academic submission covering system design, implementation, and testing.",
+      "A marketplace where workers register and receive job offers via USSD on any phone, while clients post jobs through a web app with Google sign-in, job browsing, and worker/admin dashboards. M-Pesa escrow holds payment until work is confirmed complete, protecting both sides of the transaction. Documented in a full 76-page academic submission covering system design, implementation, and testing.",
     outcome:
       "A working end-to-end platform that proves smartphone-optional access, USSD integration, and mobile-money escrow can combine into one coherent product — genuinely hard integration work for a solo final-year build.",
     links: {
+      live: "https://kazi-mtaani.onrender.com",
       github: "https://github.com/simonmwangiwaweru/kazi-mtaani",
     },
     images: [],
@@ -104,6 +106,26 @@ export const projects: Project[] = [
     links: {
       live: "https://this-is-margs.vercel.app",
       github: "https://github.com/simonmwangiwaweru/this-is-margs",
+    },
+    images: [],
+    featured: false,
+  },
+  {
+    slug: "water-tracker",
+    title: "Water Debt Tracker",
+    tagline:
+      "An installable, offline-first PWA for tracking who owes what for water deliveries.",
+    role: "Full-stack developer (personal/family project)",
+    stack: ["Next.js", "TypeScript", "Supabase", "Dexie.js (IndexedDB)", "PWA"],
+    problem:
+      "A family water-delivery business was tracking customer credit from memory and paper — nobody could reliably answer who owed what, who logged a sale, or how much was outstanding overall.",
+    built:
+      "A shared web app, installable to a phone home screen, where any family member logs sales and payments and sees the same live picture of customer balances. Every entry is attributed to a family member without full user accounts. Writes land in local storage first (Dexie/IndexedDB) and sync to Supabase in the background, so logging a sale works even with no signal — a real constraint for deliveries in areas with patchy connectivity. Overdue balances are flagged automatically on the dashboard.",
+    outcome:
+      "A purpose-built tool solving a real operational problem for a real business, with deliberate trade-offs (no login, local-first writes, offline queueing) made for the actual constraints of the use case rather than by default.",
+    links: {
+      live: "https://water-tracker-theta-ten.vercel.app",
+      github: "https://github.com/simonmwangiwaweru/water-tracker",
     },
     images: [],
     featured: false,
